@@ -1,0 +1,59 @@
+// Bootstrap
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/scss/font-awesome";
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+@import "~animate.css/animate.min";
+
+/* MIXINS */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin grid-colums($count, $gap:3) {
+	-webkit-column-count: $count;
+	   -moz-column-count: $count;
+			column-count: $count;
+	-webkit-column-gap: $gap px;
+	   -moz-column-gap: $gap px;
+			column-gap: $gap px;
+}
+@mixin colum-break() {
+	-webkit-column-break-inside: avoid;
+	          page-break-inside: avoid;
+	               break-inside: avoid;
+}
+@mixin transition($speed:0.5s) {
+	-webkit-transition: all $speed ease;
+	   -moz-transition: all $speed ease;
+	     -o-transition: all $speed ease;
+}
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);
+
+/*
+@media (max-width: $screen-xs-max) { ... }
+@media (min-width: $screen-sm-min) { ... }
+@media (max-width: $screen-sm-max) { ... }
+@media (min-width: $screen-md-min) { ... }
+@media (max-width: $screen-md-max) { ... }
+@media (min-width: $screen-lg-min) { ... }
+*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800');
