@@ -18,6 +18,8 @@ Route::prefix('admin')->namespace('Admin')->as('admin.')->middleware('auth')->gr
   Route::resource('fields', 'FieldController');
   Route::resource('users', 'UserController');
   Route::resource('products', 'ProductController');
+  Route::resource('budgets', 'BudgetController');
+  Route::resource('orders', 'OrderController');
   #Route::resource('admin/contacts', 'ContactController');
 
   //personales
@@ -28,12 +30,18 @@ Route::middleware('auth')->group(function () {
   Route::get('/home', 'WebController@index')->name('home');
   Route::get('/', 'WebController@index');
   Route::post('/contact', 'ContactController@store');
+  Route::post('/cart', 'CartController@store');
+  Route::get('/cart', 'CartController@index');
+  Route::delete('/cart/{id}', 'CartController@destroy');
+  Route::put('/cart/{id}', 'CartController@update');
+  Route::post('/orders', 'OrderController@store');
+  Route::get('/orders', 'OrderController@index');
 });
 
 Auth::routes();
 
 Route::get('/admin', function() {
-	return redirect()->route('admin.pages.index');
+	return redirect()->route('admin.orders.index');
 });
 
 //mis rutas

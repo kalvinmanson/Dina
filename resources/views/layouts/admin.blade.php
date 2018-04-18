@@ -22,20 +22,11 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
         <a class="navbar-brand" href="{{ url('/') }}">{{ config('app.name', 'Drodmin') }} </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/admin/pages">Pages</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/admin/blocks">Blocks</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/admin/categories">Categories</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/admin/users">Users</a>
                 </li>
@@ -44,6 +35,12 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/admin/products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/budgets">Budgets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/orders">Orders</a>
                 </li>
             </ul>
             <ul class="navbar-nav my-2 my-lg-0">

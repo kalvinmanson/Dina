@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Product;
 use Auth;
 use App\Http\Controllers\Controller;
 
@@ -19,7 +20,8 @@ class UserController extends Controller
     public function edit($id) {
         if(!$this->hasrole('Admin')) { return redirect('/'); }
         $user = User::find($id);
-        return view('admin.users.edit', compact('user'));
+        $products = Product::all();
+        return view('admin.users.edit', compact('user', 'products'));
     }
 
     public function update($id, Request $request) {
@@ -27,9 +29,12 @@ class UserController extends Controller
         $user = User::find($id);
         $this->validate(request(), [
             'name' => ['required', 'max:100']
-        ]);        
+        ]);
         $user->name = $request->name;
         $user->role = $request->role;
+
+        $user->products()->detach();
+        $user->products()->attach($request->products);
 
         $user->save();
         flash('Record updated')->success();

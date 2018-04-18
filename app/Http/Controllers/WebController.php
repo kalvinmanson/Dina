@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use App\Category;
 use App\Page;
+use App\Product;
+use Auth;
 
 use Illuminate\Http\Request;
 
@@ -10,7 +12,8 @@ class WebController extends Controller
 {
     public function index()
     {
-        return view('web.index');
+      $products = Auth::user()->products;
+      return view('web.index', compact('products'));
     }
     public function category($slug)
     {

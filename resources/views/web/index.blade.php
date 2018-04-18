@@ -1,24 +1,30 @@
 @extends('layouts.app')
-@section('title', 'Bienvenido a Drodmin')
+@section('title', 'MultiServicios Dina')
 @section('meta-keywords', 'Keywords for seo')
 @section('meta-description', 'Description for SEO')
 @section('content')
 <div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                  <div class="animated bounceInLeft">
-                    You are logged in! <i class="fa fa-user"></i> -----
-                    <a href="/content/user_1/images/logo-dronico.png" class="btn btn-primary" data-fancybox>Test Btn</a>
-                  </div>
-                </div>
+    <div class="card-columns py-3">
+      @foreach($products as $product)
+      <div class="card">
+        <div class="card-body">
+          <h4>{{ $product->name }}</h4>
+          <p><small>{{ $product->code }}</small> {{ $product->description }}</p>
+          <form action="/cart" method="POST">
+            {{ csrf_field() }}
+            <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">$ {{ $product->price }} COP</span>
+              </div>
+              <div class="input-group-prepend">
+                <input type="hidden" name="product_id" value="{{ $product->id }}">
+                <button class="btn btn-outline-secondary" type="submit">Agregar <i class="fa fa-shopping-cart"></i></button>
+              </div>
             </div>
+          </form>
         </div>
+      </div>
+      @endforeach
     </div>
-    <hr>
-    @include('partials.forms.contact')
 </div>
 @endsection

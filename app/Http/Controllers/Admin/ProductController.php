@@ -34,32 +34,27 @@ class ProductController extends Controller
 
     public function edit($id) {
         if(!$this->hasrole('Admin')) { return redirect('/'); }
-        $product = Product::withTrashed()->find($id);
+        $product = Product::find($id);
         $categories = Category::all();
-        $fields = Field::where('product_id', '>', 0)->select('name')->groupBy('name')->get();
-        $formats = Field::where('product_id', '>', 0)->select('format')->groupBy('format')->get();
-        return view('admin.products.edit', compact('product', 'categories', 'fields', 'formats'));
+        return view('admin.products.edit', compact('product', 'categories'));
     }
 
     public function update($id, Request $request) {
         if(!$this->hasrole('Admin')) { return redirect('/'); }
-        $product = Product::withTrashed()->find($id);
+        $product = Product::find($id);
         $this->validate(request(), [
-            'name' => ['required', 'max:200'],
-            'slug' => ['unique:products,slug,'.$product->id, 'required', 'max:100']
+            'name' => ['required', 'max:250'],
+            'code' => ['unique:products,id,'.$product->id,'required', 'max:100']
         ]);
-        //restore trashed item
-        if($request->untrash) {
-            $product->restore();
-        }
+
 
         $product->category_id = $request->category_id;
         $product->name = $request->name;
-        $product->slug = $request->slug;
+        $product->code = $request->code;
+        $product->price = $request->price;
         $product->picture = $request->picture;
         $product->description = $request->description;
-        $product->content = $request->content;
-        $product->weight = $request->weight;
+        $product->stock = $request->stock;
         $product->save();
 
         flash('Record updated')->success();
@@ -67,10 +62,7 @@ class ProductController extends Controller
     }
     public function destroy($id) {
         if(!$this->hasrole('Admin')) { return redirect('/'); }
-        $product = Product::withTrashed()->find($id);
-        if($product->trashed()) {
-            $product->forceDelete();
-        }
+        $product = Product::find($id);
         Product::destroy($product->id);
         flash('Record deleted')->success();
         return redirect()->action('Admin\ProductController@index');

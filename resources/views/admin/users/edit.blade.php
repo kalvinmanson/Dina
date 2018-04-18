@@ -23,7 +23,14 @@
                 </div>
             </div>
             <div class="col-md-4">
-                
+                <h3>Available Products</h3>
+                @foreach($products as $product)
+                <div class="custom-control custom-checkbox">
+                  <input name="products[]" type="checkbox" class="custom-control-input" id="product_{{ $product->id }}" value="{{ $product->id }}"
+                  {{ $user->products->where('id', $product->id)->first() ? 'checked' : '' }}>
+                  <label class="custom-control-label" for="product_{{ $product->id }}">{{ $product->name }}</label>
+                </div>
+                @endforeach
             </div>
         </div>
     </form>
