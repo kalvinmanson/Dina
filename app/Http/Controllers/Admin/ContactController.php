@@ -4,13 +4,15 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Contact;
+use Carbon;
 use App\Http\Controllers\Controller;
 
 class ContactController extends Controller
 {
     public function index()
     {
-        if(!$this->hasrole('Admin')) { return redirect('/'); }
+      Carbon::setLocale('es');
+      if(!$this->hasrole('Admin')) { return redirect('/'); }
     	$contacts = Contact::all();
     	return view('admin.contacts.index', compact('contacts'));
     }
@@ -26,7 +28,7 @@ class ContactController extends Controller
         $contact = Contact::find($id);
         $this->validate(request(), [
             'name' => ['required', 'max:100']
-        ]);        
+        ]);
         $contact->name = $request->name;
         $contact->role = $request->role;
 

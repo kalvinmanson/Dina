@@ -5,6 +5,7 @@ use App\Category;
 use App\Page;
 use App\Product;
 use Auth;
+use Carbon;
 
 use Illuminate\Http\Request;
 
@@ -12,8 +13,13 @@ class WebController extends Controller
 {
     public function index()
     {
-      $products = Auth::user()->products;
-      return view('web.index', compact('products'));
+      Carbon::setLocale('es');
+      return view('web.index');
+    }
+    public function printview()
+    {
+      Carbon::setLocale('es');
+      return view('web.print');
     }
     public function category($slug)
     {

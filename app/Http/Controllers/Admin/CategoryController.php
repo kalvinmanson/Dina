@@ -5,12 +5,14 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Category;
 use App\Field;
+use Carbon;
 use App\Http\Controllers\Controller;
 
 class CategoryController extends Controller
 {
     public function index() {
-        if(!$this->hasrole('Admin')) { return redirect('/'); }
+      Carbon::setLocale('es');
+      if(!$this->hasrole('Admin')) { return redirect('/'); }
     	$categories = Category::withTrashed()->get();
     	return view('admin.categories.index', compact('categories'));
     }
@@ -54,7 +56,7 @@ class CategoryController extends Controller
         if($request->untrash) {
             $category->restore();
         }
-        
+
         $category->name = $request->name;
         $category->picture = $request->picture;
         $category->description = $request->description;

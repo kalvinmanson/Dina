@@ -6,11 +6,12 @@
 <div class="container">
     <div class="row">
       <div class="col-sm-8">
+        <h3>Productos agregados</h3>
         <table class="table table-striped">
           <tr>
             <th>Producto</th>
             <th>Precio Unitario</th>
-            <th>Cantidad</th>
+            <th width="120">Cantidad</th>
             <th>Precio Total</th>
             <th></th>
           </tr>
@@ -21,8 +22,11 @@
             $total += $total_product;
           ?>
           <tr>
-            <td>{{ $cart->product->name }}</td>
-            <td>$ {{ $cart->product->price }} COP</td>
+            <td>
+              {{ $cart->product->code }} | {{ $cart->product->name }}<br>
+              <small>{{ $cart->product->presentation }}</small>
+            </td>
+            <td>$ {{ number_format($cart->product->price) }}</td>
             <td>
               <form action="/cart/{{ $cart->id }}" method="POST">
                 {{ csrf_field() }}
@@ -33,7 +37,7 @@
                 </div>
               </form>
             </td>
-            <td>$ {{ $total_product }} COP</td>
+            <td>$ {{ number_format($total_product) }}</td>
             <td>
               <form action="/cart/{{ $cart->id }}" method="POST">
                 {{ csrf_field() }}
@@ -47,18 +51,43 @@
             <td></td>
             <td></td>
             <td>Total</td>
-            <td>$ {{ $total }} COP</td>
+            <td>$ {{ number_format($total) }}</td>
             <td></td>
           </tr>
+        </table>
+
+        <h3>Productos disponibles</h3>
+        <table class="table table-striped">
+          <tr>
+            <th>Producto</th>
+            <th>Precio Unitario</th>
+            <th></th>
+          </tr>
+          @foreach($products as $product)
+            <tr>
+              <td>
+                {{ $product->code }} | {{ $product->name }}<br>
+                <small>{{ $product->presentation }}</small>
+              </td>
+              <td>$ {{ number_format($product->price) }}</td>
+              <td>
+                <form action="/cart" method="POST">
+                  {{ csrf_field() }}
+                  <input type="hidden" name="product_id" value="{{ $product->id }}">
+                  <button class="btn btn-outline-secondary btn-sm" type="submit">Agregar <i class="fa fa-shopping-cart"></i></button>
+                </form>
+              </td>
+            </tr>
+          @endforeach
         </table>
       </div>
       <div class="col-sm-4">
         <div class="card bg-dark text-white">
           <div class="card-header">Realizar pedido</div>
           <div class="card-body">
-            <p>Total: <strong> $ {{ $total }} COP</strong><br>
-            Saldo: <strong> $ {{ Auth::user()->budget }} COP</strong></p>
-            @if($total <= Auth::user()->budget)
+            <p>Total: <strong> $ {{ number_format($total) }}</strong><br>
+            Saldo: <strong> $ {{ number_format(Auth::user()->budget) }}</strong></p>
+            @if($total > 0 && $total <= Auth::user()->budget)
               <form action="/orders" method="POST">
                 {{ csrf_field() }}
                 <div class="form-group">
@@ -70,7 +99,7 @@
                 </div>
               </form>
             @else
-              <p class="text-danger text-center">Tu saldo no es suficiente para realizar este pedido.</p>
+              <p class="text-danger text-center">Tu presupuesto no es suficiente para realizar este pedido o no has agregado ningún producto a tu carro de compras.</p>
             @endif
           </div>
         </div>

@@ -3,13 +3,16 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-6 m-auto">
+        <div class="col-sm-6">
+          <p class="text-center"><img src="/img/diamant-dina.png" class="w-50"></p>
+          <p class="text-center"><img src="/img/multis-dina.png" class="w-50"></p>
+        </div>
+        <div class="col-md-6">
             <div class="card">
-                <div class="card-header">Login</div>
+                <div class="card-header">Iniciar Sesión</div>
                 <div class="card-body">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
-
                         <div class="form-group row {{ $errors->has('email') ? 'has-error' : '' }}">
                             <label for="staticEmail" class="col-sm-3 col-form-label">Email</label>
                             <div class="col-sm-9">
@@ -30,25 +33,21 @@
 
 
                         <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
-                                    </label>
-                                </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Recordarme en este equipo
+                                </label>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Login
-                                </button>
+                          <button type="submit" class="btn btn-primary">
+                              Iniciar sesión
+                          </button>
 
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
-                                </a>
-                            </div>
+                          <a class="btn btn-link" href="{{ route('password.request') }}">
+                              ¿Olvidaste tu password?
+                          </a>
                         </div>
                     </form>
                 </div>

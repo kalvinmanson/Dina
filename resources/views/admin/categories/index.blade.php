@@ -22,11 +22,17 @@
                 <td>{{ $category->id }}</td>
                 <td>
                     <a href="/admin/categories/{{ $category->id }}/edit">{{ $category->name }}</a><br />
-                    <small><a href="/{{ $category->slug }}" target="_blank">/{{ $category->slug }}</a></small>
+                    {{--<small><a href="/{{ $category->slug }}" target="_blank">/{{ $category->slug }}</a></small>--}}
                 </td>
                 <td><a href="{{ $category->picture }}" data-fancybox data-caption="{{ $category->name }}">{{ $category->picture }}</a></td>
-                <td>{{ $category->created_at }}</td>
-                <td>{{ $category->updated_at }}</td>
+                <td>
+                  {{ $category->created_at->diffForHumans() }}<br>
+                  <small>{{ $category->created_at }}</small>
+                </td>
+                <td>
+                  {{ $category->updated_at->diffForHumans() }}<br>
+                  <small>{{ $category->updated_at }}</small>
+                </td>
             </tr>
             @endforeach
         </tbody>

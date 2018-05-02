@@ -6,6 +6,7 @@
 <div class="container">
   <table class="table table-striped">
     <tr>
+      <th>#ID</th>
       <th>Estado</th>
       <th>Detalles</th>
       <th>Comentarios</th>
@@ -19,6 +20,7 @@
     {{ $order->status == 'Aceptado' ? 'table-success' : '' }}
     {{ $order->status == 'Cancelado' ? 'table-danger' : '' }}
     ">
+      <td>{{ $order->id }}</td>
       <td>{{ $order->status }}</td>
       <td>
         @foreach(json_decode($order->products) as $product)

@@ -11,7 +11,8 @@ class CartController extends Controller
 {
   public function index() {
     $carts = Auth::user()->carts;
-    return view('cart.index', compact('carts'));
+    $products = Auth::user()->contract->group->products;
+    return view('cart.index', compact('carts', 'products'));
   }
   public function store(Request $request)
   {
@@ -28,7 +29,7 @@ class CartController extends Controller
     }
     $cart->save();
     flash('Agregado al carro de compras')->success();
-    return redirect()->action('WebController@index');
+    return redirect()->action('CartController@index');
   }
   public function update($id, Request $request) {
     $cart = Cart::where('user_id', Auth::user()->id)->where('id', $id)->first();

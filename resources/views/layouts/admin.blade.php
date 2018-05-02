@@ -27,21 +27,29 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/admin/users">Users</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/admin/contacts">Contacts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/admin/products">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/admin/budgets">Budgets</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/admin/orders">Orders</a>
-                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Productos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/admin/categories">Categorias</a>
+                  <a class="dropdown-item" href="/admin/products">Productos</a>
+                  <a class="dropdown-item" href="/admin/groups">Grupos</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Clientes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/admin/contracts">Contratos</a>
+                  <a class="dropdown-item" href="/admin/users">Clientes</a>
+                  <a class="dropdown-item" href="/admin/budgets">Presupuestos</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/admin/orders">Pedidos</a>
+              </li>
             </ul>
             <ul class="navbar-nav my-2 my-lg-0">
                 <li class="nav-item">

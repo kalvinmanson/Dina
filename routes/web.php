@@ -20,6 +20,8 @@ Route::prefix('admin')->namespace('Admin')->as('admin.')->middleware('auth')->gr
   Route::resource('products', 'ProductController');
   Route::resource('budgets', 'BudgetController');
   Route::resource('orders', 'OrderController');
+  Route::resource('contracts', 'ContractController');
+  Route::resource('groups', 'GroupController');
   #Route::resource('admin/contacts', 'ContactController');
 
   //personales
@@ -28,8 +30,8 @@ Route::prefix('admin')->namespace('Admin')->as('admin.')->middleware('auth')->gr
 
 Route::middleware('auth')->group(function () {
   Route::get('/home', 'WebController@index')->name('home');
+  Route::get('/print', 'WebController@printview')->name('print');
   Route::get('/', 'WebController@index');
-  Route::post('/contact', 'ContactController@store');
   Route::post('/cart', 'CartController@store');
   Route::get('/cart', 'CartController@index');
   Route::delete('/cart/{id}', 'CartController@destroy');
@@ -40,10 +42,13 @@ Route::middleware('auth')->group(function () {
 
 Auth::routes();
 
+Route::get('/contact', 'ContactController@index');
+Route::post('/contact', 'ContactController@store');
+
 Route::get('/admin', function() {
 	return redirect()->route('admin.orders.index');
 });
 
 //mis rutas
-Route::get('{category}/{slug}', 'WebController@page')->where('category', '[a-z,0-9-]+')->where('slug', '[a-z,0-9-]+');
-Route::get('{slug}', 'WebController@category')->where('slug', '[a-z,0-9-]+');
+//Route::get('{category}/{slug}', 'WebController@page')->where('category', '[a-z,0-9-]+')->where('slug', '[a-z,0-9-]+');
+//Route::get('{slug}', 'WebController@category')->where('slug', '[a-z,0-9-]+');

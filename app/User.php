@@ -33,10 +33,18 @@ class User extends Authenticatable
     }
     public function orders()
     {
-        return $this->hasMany('App\Order');
+        return $this->hasMany('App\Order')->orderBy('created_at', 'desc');
     }
-    public function products()
+    public function budgets()
     {
-        return $this->belongsToMany('App\Product');
+        return $this->hasMany('App\Budget')->orderBy('created_at', 'desc');
+    }
+    public function group()
+    {
+        return $this->belongsTo('App\Group');
+    }
+    public function contract()
+    {
+        return $this->belongsTo('App\Contract');
     }
 }

@@ -14,7 +14,6 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-
     public function hasrole($role) {
         //validar solo admin
         $current_user = Auth::user();

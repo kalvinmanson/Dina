@@ -6,11 +6,13 @@ use Illuminate\Http\Request;
 use App\Product;
 use App\Category;
 use App\Field;
+use Carbon;
 use App\Http\Controllers\Controller;
 
 class ProductController extends Controller
 {
     public function index() {
+      Carbon::setLocale('es');
       if(!$this->hasrole('Admin')) { return redirect('/'); }
     	$products = Product::orderBy('updated_at', 'desc')->get();
     	return view('admin.products.index', compact('products'));
@@ -50,6 +52,7 @@ class ProductController extends Controller
 
         $product->category_id = $request->category_id;
         $product->name = $request->name;
+        $product->presentation = $request->presentation;
         $product->code = $request->code;
         $product->price = $request->price;
         $product->picture = $request->picture;

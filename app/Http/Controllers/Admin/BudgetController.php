@@ -6,11 +6,13 @@ use Illuminate\Http\Request;
 use App\Budget;
 use App\User;
 use Auth;
+use Carbon;
 use App\Http\Controllers\Controller;
 
 class BudgetController extends Controller
 {
   public function index() {
+    Carbon::setLocale('es');
     if(!$this->hasrole('Admin')) { return redirect('/'); }
     $users = User::all();
   	$budgets = Budget::orderBy('updated_at', 'desc')->get();

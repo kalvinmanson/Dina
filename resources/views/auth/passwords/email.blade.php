@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-6 m-auto">
             <div class="card">
-                <div class="card-header">Reset Password</div>
+                <div class="card-header">Recordar password</div>
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success">
@@ -17,7 +17,7 @@
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email">E-Mail Address</label>
+                            <label for="email">Dirección de email</label>
                             <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
                             @if ($errors->has('email'))
                                 <span class="help-block">
@@ -28,7 +28,7 @@
 
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary">
-                                Send Password Reset Link
+                                Enviarme enlace de recuperación
                             </button>
                         </div>
                     </form>

@@ -16,9 +16,9 @@
 </head>
 <body>
   <div id="app">
-    <header>
+    <header class="bg-dark">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark">
           <a class="navbar-brand" href="/">MS Dina</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,11 +34,11 @@
                 </a>
               </li>
               @endif
-              <li class="nav-item">
-                <a class="nav-link" href="/orders">Pedidos</a>
+              <li class="nav-item pl-2">
+                <a class="btn btn-outline-primary rounded" href="/orders"><i class="fa fa-exchange"></i> Pedidos</a>
               </li>
               <li class="nav-item">
-                <span class="nav-link">$ {{ Auth::user()->budget }} COP </span>
+                <span class="nav-link"> Presupuesto actual: $ {{ number_format(Auth::user()->budget) }} </span>
               </li>
               <li class="nav-item">
                   <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fa fa-power-off"></i></a>
@@ -56,12 +56,12 @@
         @include('flash::message')
         @include('partials.errors')
     </div>
-    <div class="container">
+    <div class="container bg-light py-3">
         @yield('content')
     </div>
-    <footer>
-      <div class="container">
-          <p>&copy; 2018 By <a href="//droni.co">Droni.co</a></p>
+    <footer class="bg-dark text-white">
+      <div class="container py-2">
+          <p>&copy; 2018 By <a href="//droni.co" title="Desarrollo Inteligente">Droni.co</a></p>
       </div>
     </footer>
   </div>

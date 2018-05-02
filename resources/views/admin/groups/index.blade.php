@@ -5,50 +5,45 @@
 <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#addNew">
   <i class="fa fa-plus"></i> Agregar
 </button>
-    <h1>Productos</h1>
+    <h1>Grupos de productos</h1>
     <table class="table table-striped dataTable">
         <thead class="thead-inverse">
             <tr>
                 <th width="10">#</th>
                 <th>Nombre</th>
-                <th>Categoría</th>
-                <th>Precio</th>
-                <th>Stock</th>
+                <th>Productos</th>
                 <th>Creado</th>
                 <th>Actualizado</th>
             </tr>
         </thead>
         <tbody>
-            @foreach($products as $product)
+            @foreach($groups as $group)
             <tr>
-                <td>{{ $product->id }}</td>
+                <td>{{ $group->id }}</td>
                 <td>
-                    <a href="/admin/products/{{ $product->id }}/edit">{{ $product->name }}</a><br />
-                    <small>({{ $product->presentation }}) | {{ $product->description }}</small>
-                </td>
-                <td>{{ $product->category->name }}</td>
-                <td>$ {{ number_format($product->price) }}</td>
-                <td>{{ $product->stock }}</td>
-                <td>
-                  {{ $product->created_at->diffForHumans() }}<br>
-                  <small>{{ $product->created_at }}</small>
+                    <a href="/admin/groups/{{ $group->id }}/edit">{{ $group->name }}</a><br />
+                    <small>{{ $group->description }}</small>
                 </td>
                 <td>
-                  {{ $product->updated_at->diffForHumans() }}<br>
-                  <small>{{ $product->updated_at }}</small>
+                  {{ $group->products->count() }}
+                </td>
+                <td>
+                  {{ $group->created_at->diffForHumans() }}<br>
+                  <small>{{ $group->created_at }}</small>
+                </td>
+                <td>
+                  {{ $group->updated_at->diffForHumans() }}<br>
+                  <small>{{ $group->updated_at }}</small>
                 </td>
             </tr>
             @endforeach
         </tbody>
     </table>
 
-
-
-
 <!-- Modal -->
 <div class="modal fade" id="addNew" tabindex="-1" role="dialog" aria-labelledby="addNewLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <form method="POST" action="{{ url('admin/products') }}">
+    <form method="POST" action="{{ url('admin/groups') }}">
     {{ csrf_field() }}
         <div class="modal-content">
           <div class="modal-header">
@@ -56,12 +51,6 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-          </div>
-          <div class="modal-body">
-            <div class="form-group">
-                <label for="code">Código único</label>
-                <input type="text" name="code" id="nacodee" class="form-control" placeholder="Code Unique" required>
-            </div>
           </div>
           <div class="modal-body">
             <div class="form-group">

@@ -1,3 +1,13 @@
 SortModel Lib table
 use mail()
 relationships
+
+imprimir estado de cuenta **
+fechas admin*
+precios number admin*
+restar presupuestos*
+cambiar pedidos a nombre de *
+agrupar menu admin *
+devoluciones
+quejas y reclamos
+emails
