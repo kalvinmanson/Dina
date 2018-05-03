@@ -29,16 +29,12 @@
                     <label for="name">Nombre del producto</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="ej. Example Page" value="{{ old('name') ? old('name') : $product->name }}">
                 </div>
-                <div class="form-group">
-                    <label for="presentation">Presentacion</label>
-                    <input type="text" class="form-control" id="presentation" name="presentation" placeholder="ej. Litro, galon, etc" value="{{ old('presentation') ? old('presentation') : $product->presentation }}">
-                </div>
 
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="code">Código único</label>
-                        <input type="text" class="form-control" id="code" name="code" value="{{ old('code') ? old('code') : $product->code }}">
+                        <label for="presentation">Presentacion</label>
+                        <input type="text" class="form-control" id="presentation" name="presentation" placeholder="ej. Litro, galon, etc" value="{{ old('presentation') ? old('presentation') : $product->presentation }}">
                     </div>
                   </div>
                   <div class="col-sm-6">
@@ -58,7 +54,7 @@
                     <textarea class="form-control" id="description" name="description" placeholder="Describe your page">{{ old('description') ? old('description') : $product->description }}</textarea>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save</button>
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Guardar</button>
                 </div>
                 </form>
             </div>

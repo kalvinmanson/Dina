@@ -13,13 +13,13 @@
                 <div class="card-body">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
-                        <div class="form-group row {{ $errors->has('email') ? 'has-error' : '' }}">
-                            <label for="staticEmail" class="col-sm-3 col-form-label">Email</label>
+                        <div class="form-group row {{ $errors->has('username') ? 'has-error' : '' }}">
+                            <label for="staticEmail" class="col-sm-3 col-form-label">Username</label>
                             <div class="col-sm-9">
-                              <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
-                              @if ($errors->has('email'))
+                              <input id="username" type="text" class="form-control" name="username" value="{{ old('username') }}" required autofocus>
+                              @if ($errors->has('username'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
+                                        <strong>{{ $errors->first('username') }}</strong>
                                     </span>
                                 @endif
                             </div>

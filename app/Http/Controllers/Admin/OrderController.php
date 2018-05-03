@@ -18,28 +18,6 @@ class OrderController extends Controller
       $users = User::all();
     	return view('admin.orders.index', compact('orders', 'users'));
     }
-    public function store(Request $request) {
-      if(!$this->hasrole('Admin')) { return redirect('/'); }
-  	  $this->validate(request(), [
-        'name' => ['required', 'max:100'],
-        'code' => ['unique:orders']
-      ]);
-
-      $order = new Order;
-      $order->code = $request->code;
-      $order->name = $request->name;
-      $order->category_id = Category::first()->id;
-      $order->save();
-      flash('Record created')->success();
-      return redirect()->action('Admin\OrderController@index');
-    }
-
-    public function edit($id) {
-        if(!$this->hasrole('Admin')) { return redirect('/'); }
-        $order = Order::find($id);
-        $categories = Category::all();
-        return view('admin.orders.edit', compact('order', 'categories'));
-    }
 
     public function update($id, Request $request) {
         if(!$this->hasrole('Admin')) { return redirect('/'); }

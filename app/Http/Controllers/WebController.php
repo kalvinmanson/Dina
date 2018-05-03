@@ -40,4 +40,19 @@ class WebController extends Controller
             return view('web/page', compact('page'));
         }
     }
+
+    /*public function migrar() {
+      $string = file_get_contents(public_path("products.json"));
+      $records = json_decode($string, true);
+      $category = Category::first();
+      foreach($records as $record) {
+        $product = new Product;
+        $product->name = $record['name'];
+        $product->description = $record['description'];
+        $product->presentation = $record['presentation'];
+        $product->price = filter_var($record['price'], FILTER_SANITIZE_NUMBER_INT);
+        $product->category_id = $category->id;
+        $product->save();
+      }
+    }*/
 }

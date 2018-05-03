@@ -51,11 +51,19 @@ class UserController extends Controller
         if(!$this->hasrole('Admin')) { return redirect('/'); }
         $user = User::find($id);
         $this->validate(request(), [
-            'name' => ['required', 'max:100']
+            'name' => ['required', 'max:100'],
+            'username' => ['unique:users,username,'.$user->id, 'required', 'max:20'],
+            'email' => ['unique:users,email,'.$user->id, 'required', 'max:150']
         ]);
         $user->contract_id = $request->contract_id;
         $user->name = $request->name;
+        $user->username = $request->username;
+        $user->email = $request->email;
         $user->role = $request->role;
+        //cambiar password
+        if(!empty($request->password)) {
+          $user->password = Hash::make($request->password);
+        }
 
         $user->save();
         flash('Cliente actualizado')->success();

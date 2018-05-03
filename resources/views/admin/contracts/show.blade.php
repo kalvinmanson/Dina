@@ -44,7 +44,7 @@
                           </tr>
                           @foreach(json_decode($order->products) as $product)
                           <tr>
-                            <td>{{ $product->code }}</td>
+                            <td>{{ $product->id }}</td>
                             <td>
                               {{ $product->name }}<br>
                               <small>{{ $product->presentation }}</small>

@@ -23,7 +23,7 @@
           ?>
           <tr>
             <td>
-              {{ $cart->product->code }} | {{ $cart->product->name }}<br>
+              {{ $cart->product->id }} | {{ $cart->product->name }}<br>
               <small>{{ $cart->product->presentation }}</small>
             </td>
             <td>$ {{ number_format($cart->product->price) }}</td>
@@ -59,14 +59,16 @@
         <h3>Productos disponibles</h3>
         <table class="table table-striped">
           <tr>
+            <th>#</th>
             <th>Producto</th>
             <th>Precio Unitario</th>
             <th></th>
           </tr>
           @foreach($products as $product)
             <tr>
+              <td>{{ $product->id }}</td>
               <td>
-                {{ $product->code }} | {{ $product->name }}<br>
+                {{ $product->name }}<br>
                 <small>{{ $product->presentation }}</small>
               </td>
               <td>$ {{ number_format($product->price) }}</td>

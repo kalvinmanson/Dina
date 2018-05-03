@@ -1,11 +1,24 @@
 @extends('layouts.admin')
 
 @section('content')
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#addNew">
-  <i class="fa fa-plus"></i> Agregar
-</button>
+<div class="row">
+  <div class="col-sm-4">
     <h1>Productos</h1>
+  </div>
+  <div class="col-sm-4">
+    <form class="form-inline">
+      <label class="sr-only" for="q">Buscar:</label>
+      <input type="text" class="form-control mb-2 mr-sm-2" id="q" name="q" placeholder="Nombre del producto">
+      <button type="submit" class="btn btn-secondary mb-2"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+  <div class="col-sm-4">
+    <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#addNew">
+      <i class="fa fa-plus"></i> Agregar
+    </button>
+  </div>
+</div>
+
     <table class="table table-striped dataTable">
         <thead class="thead-inverse">
             <tr>
@@ -41,6 +54,8 @@
             @endforeach
         </tbody>
     </table>
+    <p class="text-muted">Mostrando {{ $products->count() }} de un total de {{ $totalprods->count() }}</p>
+    {{ $products->links("pagination::bootstrap-4") }}
 
 
 
@@ -56,12 +71,6 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-          </div>
-          <div class="modal-body">
-            <div class="form-group">
-                <label for="code">Código único</label>
-                <input type="text" name="code" id="nacodee" class="form-control" placeholder="Code Unique" required>
-            </div>
           </div>
           <div class="modal-body">
             <div class="form-group">

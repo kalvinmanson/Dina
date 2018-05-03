@@ -25,7 +25,7 @@
                 <input name="products[]" type="checkbox" class="custom-control-input" id="product_{{ $product->id }}" value="{{ $product->id }}"
                 {{ $group->products->where('id', $product->id)->first() ? 'checked' : '' }}>
                 <label class="custom-control-label" for="product_{{ $product->id }}">
-                  {{ $product->code }} | {{ $product->name }}<br>
+                  {{ $product->id }} | {{ $product->name }}<br>
                   <small>{{ $product->presentation }}</small>
                 </label>
               </div>

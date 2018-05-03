@@ -8,8 +8,20 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="ej. Colombia" value="{{ old('name') ? old('name') : $user->name }}">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="ej. Pedro Perez" value="{{ old('name') ? old('name') : $user->name }}">
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="pedroperez" value="{{ old('username') ? old('username') : $user->username }}">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="text" class="form-control" id="password" name="password" placeholder="Deja en blanco para no modificar" value="" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" name="email" placeholder="ej. usuario@email.com" value="{{ old('email') ? old('email') : $user->email }}">
                 </div>
                 <div class="form-group">
                     <label for="domain">Role</label>
@@ -73,7 +85,7 @@
                       </tr>
                       @foreach(json_decode($order->products) as $product)
                       <tr>
-                        <td>{{ $product->code }}</td>
+                        <td>{{ $product->id }}</td>
                         <td>
                           {{ $product->name }}<br>
                           <small>{{ $product->presentation }}</small>

@@ -1,0 +1,618 @@
+[
+  {
+    "code": 1,
+    "name": "Acido Muriático",
+    "description": "Tipo institucional, color: amarillo, presentación: líquido, composición: Ácido Clorhídrico – HCl; Uso: Limpiador para baños, cocinas, servicios sanitarios, azulejos, tinas y lavatorios, de manchas de óxido manchas del agua o sarro, se usa siempre diluido.",
+    "presentation": "Galon",
+    "price": "22.000"
+  },
+  {
+    "code": 2,
+    "name": "Acido Muriático",
+    "description": "Tipo institucional, color: amarillo, presentación: líquido, composición: Ácido Clorhídrico – HCl; Uso: Limpiador para baños, cocinas, servicios sanitarios, azulejos, tinas y lavatorios, de manchas de óxido manchas del agua o sarro, se usa siempre diluido.",
+    "presentation": "20.000 CC",
+    "price": "98.000"
+  },
+  {
+    "code": 3,
+    "name": "Liquido traslucido de olores agradables",
+    "description": "Soluble totalmente en agua; olor: diferentes aromas; color: diferentes colores; PH: 10-11; características: es limpiador, desifecta y ambienta al mismo tiempo, se puede usar a diario, es ligeramente alcalino; usos: se puede usar en baños, cocinas, oficinas; no toxico.",
+    "presentation": "Galón",
+    "price": "14.280"
+  },
+  {
+    "code": 4,
+    "name": "Liquido traslucido de olores agradables,",
+    "description": "Soluble totalmente en agua; olor: diferentes aromas; color: diferentes colores; PH: 10-11; características: es limpiador, desifecta y ambienta al mismo tiempo, se puede usar a diario, es ligeramente alcalino; usos: se puede usar en baños, cocinas, oficinas; no toxico.",
+    "presentation": "20.000 CC",
+    "price": "60.000"
+  },
+  {
+    "code": 5,
+    "name": "Ambientador de gel",
+    "description": "ambienta espacios reducidos, contenido 31 gramos, diferentes fragancias",
+    "presentation": "Unidad x de 31 gr",
+    "price": "3.000"
+  },
+  {
+    "code": 6,
+    "name": "Aceites naturales",
+    "description": "Elimina olores y aromatiza diferentes fragancias, contenido: 1 Repuestos de 21 cm3.",
+    "presentation": "Unidad",
+    "price": "7.500"
+  },
+  {
+    "code": 7,
+    "name": "Aceites naturales",
+    "description": "Elimina olores y aromatiza diferentes fragancias, contenido: 2 Repuestos de 21 cm3.",
+    "presentation": "Unidad",
+    "price": "15.000"
+  },
+  {
+    "code": 8,
+    "name": "Aceites naturales",
+    "description": "Elimina olores y aromatiza diferentes fragancias, contenido: 1 Aparato difusor Electrico y 1 Repuesto de 21 cm3.",
+    "presentation": "Unidad",
+    "price": "21.000"
+  },
+  {
+    "code": 9,
+    "name": "Aceites naturales",
+    "description": "Elimina olores y aromatiza, diferentes fragancias, contenido: 1 Aparato difusor Electrico y 3 Repuestos de 21 cm3.",
+    "presentation": "Unidad",
+    "price": "36.000"
+  },
+  {
+    "code": 10,
+    "name": "Ambientador",
+    "description": "Emanadores tipo varitas difusoras de aromas de 80 ml; 20 cm de largo cada varita aproximadamente.",
+    "presentation": "Unidad",
+    "price": "16.500"
+  },
+  {
+    "code": 11,
+    "name": "Ambientador",
+    "description": "En gel, Fragancias: Baby, Cítricos del campo, Frescura del Paraíso y Frutos Silvestres presentacion.",
+    "presentation": "Display x 12 Unidades",
+    "price": "31.600"
+  },
+  {
+    "code": 12,
+    "name": "Pastilla Limpiadora",
+    "description": "De 72 gr uso: limpiar y prevenir el sarro y el mal olor en inodoros aroma fragancias: Canela, Cereza, Lavanda y Limón.",
+    "presentation": "Display x 12 Pastillas de 72 gr",
+    "price": "40.000"
+  },
+  {
+    "code": 13,
+    "name": "Aroma en Aerosol",
+    "description": "De 291 gr /360 ml/360 cm3 para uso: limpiar y aromatizar el ambiente; aromas: de campos de lavanda, Caricias de Bebe, Manzana-Canela, Paraíso Azul; uso: Industrial o Domestico.",
+    "presentation": "Botella X 360 cm3",
+    "price": "9.500"
+  },
+  {
+    "code": 14,
+    "name": "Aroma en Aerosol",
+    "description": "De 345 gr /400 ml/400 cm3 para limpiar y aromatizar el ambiente en aromas de Amore, Brisa Cumbres, Caricias de Bebe, Harmony, Hawaiian Breeze, Jardín Campestre, Lavanda, Manzana-Canela, Paraíso Azul para uso Industrial o Domestico.",
+    "presentation": "Botella X 400 cm3",
+    "price": "10.500"
+  },
+  {
+    "code": 15,
+    "name": "Ambientador",
+    "description": "De gel, ambienta espacios reducidos, contenido 8 gramos, diferentas aromas.",
+    "presentation": "Unidad de 8 gramos",
+    "price": "3.500"
+  },
+  {
+    "code": 16,
+    "name": "Balde",
+    "description": "El diseño ovalado de este permite ajustarlo más fácilmente al cuerpo aumentando su control y estabilidad, situación que evita ocasionar derrames que puedan generar accidente por caídas. Es ideal en la limpieza de pasillos y demás áreas donde los espacios son limitados, diferentes colores, capacidad 12 litros.",
+    "presentation": "Unidad",
+    "price": "6.500"
+  },
+  {
+    "code": 17,
+    "name": "Hipoclorito",
+    "description": "de sodio al 5,25% para uso domestico, inholoro, en envase plástico, uso: Se puede utilizar para blanquear y despercudir ropa blanca, tambien en la desifeccion de esponjas, trapos, pocetas, desagues, laminas cortantes como cuchillo, abrelatas y otros.",
+    "presentation": "Galon",
+    "price": "9.500"
+  },
+  {
+    "code": 18,
+    "name": "Hipoclorito",
+    "description": "de sodio al 5,25% para uso domestico, inholoro, en envase plástico, uso: Se puede utilizar para blanquear y despercudir ropa blanca, tambien en la desifeccion de esponjas, trapos, pocetas, desagues, laminas cortantes como cuchillo, abrelatas y otros.",
+    "presentation": "20.000 CC",
+    "price": "24.500"
+  },
+  {
+    "code": 19,
+    "name": "Bolsa",
+    "description": "Plastica de 40 x 40 cm calibre 2 general.",
+    "presentation": "Paquete X 24 Unidades",
+    "price": "3.094"
+  },
+  {
+    "code": 20,
+    "name": "Bolsa",
+    "description": "Plastica de 60 x 90 cm calibre 6 general.",
+    "presentation": "Paquete X 24 Unidades",
+    "price": "4.165"
+  },
+  {
+    "code": 21,
+    "name": "Trapero",
+    "description": "Es un brillador fabricado con una mezcla de diversos hilos selectos 100 % algodón, mezclados y tejidos , • Longitud del mango en madera entre 120 y 150 cm.",
+    "presentation": "Unidad",
+    "price": "6.664"
+  },
+  {
+    "code": 22,
+    "name": "Carro",
+    "description": "exprimidor lavatrapero; material: poliuretano; características: cuenta con 4 llantas y defensas protectoras de golpes, palanca de metal; medidas generales: de 58 x 39 x 86 aprox; capacidad: de 20 litros; color: amarillo; uso: exprimidor de mopas sin necesidad de mezclar las manos con la suciedad, semiindustrial.",
+    "presentation": "Unidad",
+    "price": "249.900"
+  },
+  {
+    "code": 23,
+    "name": "Cepillo",
+    "description": "Para lavar baños con base. Dimensiones del producto: Largo 12.4 cm; Ancho: 12.4 cm; Alto 38 cm.",
+    "presentation": "Unidad",
+    "price": "5.500"
+  },
+  {
+    "code": 24,
+    "name": "Cepillo",
+    "description": "Para lavar pisos con cuerpo fabricado en goma-caucho, cerdas elaboradas en polipropileno, con mango tipo planchita.",
+    "presentation": "Unidad",
+    "price": "3.500"
+  },
+  {
+    "code": 25,
+    "name": "Cepillo",
+    "description": "Para lavar pisos con cuerpo fabricado en goma-caucho, cerdas elaboradas en polipropileno, con palo, Dimensiones del Producto: Largo: 22.4 cm; Ancho: 7.9 cm; Alto: 9.2.",
+    "presentation": "Unidad",
+    "price": "5.500"
+  },
+  {
+    "code": 26,
+    "name": "Cera emulsionada para pisos",
+    "description": "Apariencia: Liquido no viscoso blanco – no transparente; olor: ligeramente a manzana; concentración de sólidos: 18% aproximado; Punto de Inflamación: Producto no inflamable; Solubilidad: Soluble en agua en todas proporciones; PH 3.0-4-0, gravedad específica: 1.040-1.080g/MI; características: la cera emulsionada antideslizante es una emulsión de ceras naturales.",
+    "presentation": "Galón",
+    "price": "25.000"
+  },
+  {
+    "code": 27,
+    "name": "Cera emulsionada para pisos",
+    "description": "Apariencia: Liquido no viscoso blanco – no transparente; olor: ligeramente a manzana; concentración de sólidos: 18% aproximado; Punto de Inflamación: Producto no inflamable; Solubilidad: Soluble en agua en todas proporciones; PH 3.0-4-0, gravedad específica: 1.040-1.080g/MI; características: la cera emulsionada antideslizante es una emulsión de ceras naturales.",
+    "presentation": "20.000 CC",
+    "price": "67.000"
+  },
+  {
+    "code": 28,
+    "name": "Cera auto brillante",
+    "description": "auto brillante para pisos; composición: plastiwax, durowax, colorantes y preservantes; apariencia: líquido homogéneo; olor: característico; color: según necesidad; PH: 7.0-7.5; uso: para dar brillo y proteger los pisos del tráfico pesado, formando una capa protectora resistente al desgaste natural de pisos en colegios, universidades, oficinas y demás instituciones.",
+    "presentation": "Galón",
+    "price": "39.270"
+  },
+  {
+    "code": 29,
+    "name": "Cera auto brillante",
+    "description": "auto brillante para pisos; composición: plastiwax, durowax, colorantes y preservantes; apariencia: líquido homogéneo; olor: característico; color: según necesidad; PH: 7.0-7.5; uso: para dar brillo y proteger los pisos del tráfico pesado, formando una capa protectora resistente al desgaste natural de pisos en colegios, universidades, oficinas y demás instituciones.",
+    "presentation": "20.000 CC",
+    "price": "150.000"
+  },
+  {
+    "code": 30,
+    "name": "Cera",
+    "description": "Tipo grasa roja, Color rojo, requiere de brillado.",
+    "presentation": "Galón",
+    "price": "27.000"
+  },
+  {
+    "code": 31,
+    "name": "Cesta",
+    "description": "Plástica cerrada con tapa, estilo pedestal, capacidad 12 litros, 36 cm alto aprox.",
+    "presentation": "Unidad",
+    "price": "28.000"
+  },
+  {
+    "code": 32,
+    "name": "Cesta",
+    "description": "Cesta. Calada para basura; plástica; varios colores 36 cm alto aprox. Unidad",
+    "presentation": "Unidad",
+    "price": "20.000"
+  },
+  {
+    "code": 33,
+    "name": "Chupa para sanitarios",
+    "description": "De succión para desatascar sanitarios, lavamanos, lavaplatos y sifones. Dimensiones: Lóngitud del mango: 42 cm; Diámetro de la base de caucho: 11 cm; Color de la base de caucho: negro.",
+    "presentation": "Unidad",
+    "price": "3.500"
+  },
+  {
+    "code": 34,
+    "name": "Churrusco",
+    "description": ". Para baño con mango en plástico.",
+    "presentation": "Unidad",
+    "price": "8.330"
+  },
+  {
+    "code": 35,
+    "name": "Colector de basura",
+    "description": "Capacidad 120 litros; con 2 ruedas, diámetro de las ruedas: 15 cm aprox y pedal de acero; Dimenciones: (alto: 90 cm, ancho: 48 cm, profundo: 55 cm) carga máxima: 48 kg; color gris; uso: recolector de residuos.",
+    "presentation": "Unidad",
+    "price": "416.500"
+  },
+  {
+    "code": 36,
+    "name": "Creolina",
+    "description": "Composicion: ; mezcla de fenol, disolventes, emulsionantes e inertes; aspecto: liquido; olor: característico del fenol; color: marrón oscuro; densidad: 1.004 min (20° c) concentración: 5 min; solubilidad: del 1:1 a 1:5 en agua; uso: como desinfectante, insecticida, bactericida, desinfectante y fungicida: elimina hongos, en pisos húmedos, patios, baños, depósitos y en áreas húmedas del campo y ciudad.",
+    "presentation": "Galón",
+    "price": "20.000"
+  },
+  {
+    "code": 37,
+    "name": "Creolina",
+    "description": "Composicion: ; mezcla de fenol, disolventes, emulsionantes e inertes; aspecto: liquido; olor: característico del fenol; color: marrón oscuro; densidad: 1.004 min (20° c) concentración: 5 min; solubilidad: del 1:1 a 1:5 en agua; uso: como desinfectante, insecticida, bactericida, desinfectante y fungicida: elimina hongos, en pisos húmedos, patios, baños, depósitos y en áreas húmedas del campo y ciudad.",
+    "presentation": "20.000 CC",
+    "price": "78.000"
+  },
+  {
+    "code": 38,
+    "name": "Desengrasante",
+    "description": "Limpiador hidrosoluble; apariencia: líquido no viscoso, traslucido; olor: característico, no desagradable, gravedad específica: 1.03 +/- 0.05 PH: 12.5 +/1.0; punto de inflamación: no inflamable; solubilidad: soluble en agua en todas las proporciones; usos: limpieza de máquinas y herramientas, limpieza de depósitos, desengrase de pisos de hormigón, concreto y baldosa, limpieza de filtos y campanas extractoras en cocinas.",
+    "presentation": "Galón",
+    "price": "24.000"
+  },
+  {
+    "code": 39,
+    "name": "Desengrasante",
+    "description": "Limpiador hidrosoluble; apariencia: líquido no viscoso, traslucido; olor: característico, no desagradable, gravedad específica: 1.03 +/- 0.05 PH: 12.5 +/1.0; punto de inflamación: no inflamable; solubilidad: soluble en agua en todas las proporciones; usos: limpieza de máquinas y herramientas, limpieza de depósitos, desengrase de pisos de hormigón, concreto y baldosa, limpieza de filtos y campanas extractoras en cocinas.",
+    "presentation": "20.000 CC",
+    "price": "66.000"
+  },
+  {
+    "code": 40,
+    "name": "Destapa Tuberias",
+    "description": "Agente químico, Apariencia: Sólido en escamas de tamaño irregular; Alcalinidad libre (NaOH): 83.0 % Mínimo; color: Azul claro a azul intenso; uso: especialmente diseñado como destapador de cañerías. Elimina acumulaciones de hilachas, pelos, fango, grasas, esponja, material vegetal, colillas de cigarrillos, etc. No quita obstrucciones causadas por madera, hierro, metal, vidrio roto u otras sustancias sólidas similares. Presentación: Envase de Polietileno x 350 gramos.",
+    "presentation": "Envase x 350 gramos",
+    "price": "14.900"
+  },
+  {
+    "code": 41,
+    "name": "Detergente",
+    "description": "En polvo granulado, color: blanco puntos azules o verdes composición química: 1. Alquil aril sulfonato de sodio, 2. Dioxido de silicio, 3. Oxido de sodio, 4. Tripolifosfato de sodio, 5. Ftalocianina de zinc, 6. Sulfato de sodio, 7. Carbonato de sodio, 8. Perfume, 9. Agua; fragancia: floral, limon; uso: domestico, para la limpieza se recomienda usar en una solución de 1 a 3 %.",
+    "presentation": "5.000 gr",
+    "price": "17.850"
+  },
+  {
+    "code": 42,
+    "name": "Detergente",
+    "description": "En polvo granulado, color: blanco puntos azules o verdes composición química: 1. Alquil aril sulfonato de sodio, 2. Dioxido de silicio, 3. Oxido de sodio, 4. Tripolifosfato de sodio, 5. Ftalocianina de zinc, 6. Sulfato de sodio, 7. Carbonato de sodio, 8. Perfume, 9. Agua; fragancia: floral, limon; uso: domestico, para la limpieza se recomienda usar en una solución de 1 a 3 %.",
+    "presentation": "Paca X 24 Unidades x 250 gr",
+    "price": "74.000"
+  },
+  {
+    "code": 43,
+    "name": "Detergente",
+    "description": "En polvo granulado, color: blanco puntos azules o verdes composición química: 1. Alquil aril sulfonato de sodio, 2. Dioxido de silicio, 3. Oxido de sodio, 4. Tripolifosfato de sodio, 5. Ftalocianina de zinc, 6. Sulfato de sodio, 7. Carbonato de sodio, 8. Perfume, 9. Agua; fragancia: floral, limon; uso: domestico, para la limpieza se recomienda usar en una solución de 1 a 3 %.",
+    "presentation": "Paca X 40 Unidades x 500 gr",
+    "price": "88.000"
+  },
+  {
+    "code": 44,
+    "name": "Dispensador",
+    "description": "En acero inoxidable para papel higiénico natural.",
+    "presentation": "Unidad",
+    "price": "165.000"
+  },
+  {
+    "code": 45,
+    "name": "Dispensadores",
+    "description": "En pasta y acrilico para papel higiénico natural.",
+    "presentation": "Unidad",
+    "price": "45.000"
+  },
+  {
+    "code": 46,
+    "name": "Escoba",
+    "description": "suave con mango de madera (largo: 1.20 m aprox) , con área de barrido mayor o igual a 30 cm, con acople plástico roscado , con material de las cerdas con Fibra sintéticas de avanzada tecnología y mixtura de PVC para mayor resistencia.",
+    "presentation": "Unidad",
+    "price": "5.000"
+  },
+  {
+    "code": 47,
+    "name": "Esponja",
+    "description": "para acondicionamiento de superficies, para trabajo medio, construido en una combinación de minerales , fibras y resinas sintéticas en un paño no tejido y de acción tridimensional, composición: Fibras de Nylon, resina, oxido de aluminio, abierta tridimencional, color: gris.",
+    "presentation": "Unidad",
+    "price": "1.428"
+  },
+  {
+    "code": 48,
+    "name": "Esponja",
+    "description": "Fibra Abrasiva, color: verde; uso: limpia de manera efectiva todo tipo de utensilios como ollas, cubiertos, sartenes de aluminio y superficies de la cocina. Para limpiar y desengrasar mejor en la limpieza mas pesada. No oxida y es muy durable.",
+    "presentation": "Paquete X 3 Unidades",
+    "price": "2.000"
+  },
+  {
+    "code": 49,
+    "name": "Esponja",
+    "description": "de alambre uso: limpiar y remover suciedad pegada para uso Industrial o Domestico.",
+    "presentation": "Unidad",
+    "price": "500"
+  },
+  {
+    "code": 50,
+    "name": "Esponja",
+    "description": "Tipo espuma y fribra con canales doble uso, uso: Ideal para vajilla y cristaleria, abrasivo para remover la mugre, esponja para utensilios delicados. Escurrase despues de su uso.",
+    "presentation": "Paquete X 3 Unidades",
+    "price": "1.900"
+  },
+  {
+    "code": 51,
+    "name": "Gel Incoloro",
+    "description": "trasparente Antiséptico gel para manos que no requiere enjuague, formulado a base de alcohol etílico de 60-80% w/w; adicionado con humectantes y emolientes hipo alergénico, aromatizantes y aceites escenciales; pH: 6.5-7.5 Uso: descontaminante y desinfectante sobre superficies, elimina 99% gérmenes y se evapora facilmente.",
+    "presentation": "500 CC",
+    "price": "8.925"
+  },
+  {
+    "code": 52,
+    "name": "Gel",
+    "description": "Incoloro, trasparente Antiséptico gel para manos que no requiere enjuague, formulado a base de alcohol etílico de 60-80% w/w; adicionado con humectantes y emolientes hipo alergénico, aromatizantes y aceites escenciales; pH: 6.5-7.5 Uso: descontaminante y desinfectante sobre superficies, elimina 99% gérmenes y se evapora facilmente.",
+    "presentation": "Galón",
+    "price": "40.000"
+  },
+  {
+    "code": 53,
+    "name": "Guantes",
+    "description": "De latex 100% natural, Calibre 25; color amarillo Tallas 7, 8, 9 ; uso: labores de hogar, oficina.",
+    "presentation": "Par",
+    "price": "3.000"
+  },
+  {
+    "code": 54,
+    "name": "Guante",
+    "description": "industrial de latex 100% natural, calibre 35 - Longitud 29.5 +/- 0.5 cm - Peso gramos 42.0 +/- 0.5gr ; uso: labores industriales como ferreteria, construcción, aseo hogar, oficinas; tallas: S (7-7 1/2).",
+    "presentation": "Par",
+    "price": "4.000"
+  },
+  {
+    "code": 55,
+    "name": "Guante",
+    "description": "Industrial de latex 100% natural, calibre 35 - Longitud 29.5 +/- 0.5 cm - Peso gramos 42.0 +/- 0.5gr ; uso: labores industriales como ferreteria, construcción, aseo hogar, oficinas; tallas: M(8-8 1/2)-L(9-9 1/2)",
+    "presentation": "Par",
+    "price": "4.000"
+  },
+  {
+    "code": 56,
+    "name": "Cloro",
+    "description": "Liquido Formula: NaClO, apariencia: liquido amarillo, espuma: no contiene; solubilidad: excelente; inflamabilidad: no es inflamable; características: se utiliza como desinfectante al 1% , además destruye muchos colorantes por lo que se utiliza como blanqueador. Su efecto es esencial en el lavado de frutas, verduras. Superficies: lisa, corrugada, para baño; ataca materias organcias en el tratamiento de aguas residuales.",
+    "presentation": "Galon",
+    "price": "9.500"
+  },
+  {
+    "code": 57,
+    "name": "Cloro",
+    "description": "Liquido Formula: NaClO, apariencia: liquido amarillo, espuma: no contiene; solubilidad: excelente; inflamabilidad: no es inflamable; características: se utiliza como desinfectante al 1% , además destruye muchos colorantes por lo que se utiliza como blanqueador. Su efecto es esencial en el lavado de frutas, verduras. Superficies: lisa, corrugada, para baño; ataca materias organcias en el tratamiento de aguas residuales.",
+    "presentation": "20.000 CC",
+    "price": "24.500"
+  },
+  {
+    "code": 58,
+    "name": "Insecticida",
+    "description": "en Aerosol rastreros envase X 360 cc.",
+    "presentation": "Envase x 360 cc",
+    "price": "16.065"
+  },
+  {
+    "code": 59,
+    "name": "Insecticida",
+    "description": "En Aerosol doble acción, mata moscas, mosquitos y zancudos envase X 360 cc.",
+    "presentation": "Envase x 360 cc",
+    "price": "16.065"
+  },
+  {
+    "code": 60,
+    "name": "Jabón",
+    "description": "para manos desinfectante; apariencia: líquido viscoso; color: incoloro - traslucido; olor: diferentes aromas; composición( detergentes: líquidos, tenso activos no iónicos, gliserina, propilenglicol. Desinfectante: triclosan).",
+    "presentation": "500 CC",
+    "price": "4.000"
+  },
+  {
+    "code": 61,
+    "name": "Jabón",
+    "description": "para manos desinfectante; apariencia: líquido viscoso; color: incoloro - traslucido; olor: diferentes aromas; composición( detergentes: líquidos, tenso activos no iónicos, gliserina, propilenglicol. Desinfectante: triclosan)",
+    "presentation": "Galón",
+    "price": "18.000"
+  },
+  {
+    "code": 62,
+    "name": "Jabon Pasta",
+    "description": "lavalozas homogénea sin grumos; componentes: tensoactivo aniónico (máxima limpieza), biodegradable, humectante (suavidad a manos); PH (sol 1%): 11 maximo; colores: verde (limón), naranja(bicarbonato), verde claro (aloe vera) olor: cítricos (todos); uso: amplia aplicación para las actividades generales de limpieza de superficies duras en el hogar, oficina.",
+    "presentation": "Envase X 900 gr",
+    "price": "5.950"
+  },
+  {
+    "code": 63,
+    "name": "Escoba",
+    "description": "Cuerpo elaborado en cerdas, con mango tipo no extensible, material del mango madera de longitud 1.5 mts.",
+    "presentation": "Unidad",
+    "price": "6.500"
+  },
+  {
+    "code": 64,
+    "name": "Limpia Vidrios",
+    "description": "Liquido semitrasparente soluble; color: azul; olor: caracteristico; PH: 10-12 uso: limpieza de puertas, ventanales, superficies de fórmica, lámparas, vitrinas, espejos, pizarrones, cubiertas de escritorios.",
+    "presentation": "Galón",
+    "price": "10.500"
+  },
+  {
+    "code": 65,
+    "name": "Limpia Vidrios",
+    "description": "Liquido semitrasparente soluble; color: azul; olor: caracteristico; PH: 10-12 uso: limpieza de puertas, ventanales, superficies de fórmica, lámparas, vitrinas, espejos, pizarrones, cubiertas de escritorios.",
+    "presentation": "20.000 CC",
+    "price": "45.000"
+  },
+  {
+    "code": 66,
+    "name": "Limpia Vidrios",
+    "description": "Liquido semitrasparente soluble; color: azul; olor: caracteristico; PH: 10-12 uso: limpieza de puertas, ventanales, superficies de fórmica, lámparas, vitrinas, espejos, pizarrones, cubiertas de escritorios.",
+    "presentation": "650 ml",
+    "price": "4.165"
+  },
+  {
+    "code": 67,
+    "name": "Limpiador desinfectante",
+    "description": "aroma: lavanda, floral, etc; uso: ideal para desinfección profunda En una sola operación y de manera rápida y sencilla, limpia, desinfecta y desodoriza cualquier tipo de suciedad, especialmente, la derivada de grasas y toda clase de aceites. Puede usarse sobre cualquier superficie lavable, como pisos, puertas, paredes, azulejos, etc. Presentación: envase plástico.",
+    "presentation": "5.000 CC",
+    "price": "19.500"
+  },
+  {
+    "code": 68,
+    "name": "Limpiador desinfectante",
+    "description": "aroma: lavanda, floral, etc; uso: ideal para desinfección profunda En una sola operación y de manera rápida y sencilla, limpia, desinfecta y desodoriza cualquier tipo de suciedad, especialmente, la derivada de grasas y toda clase de aceites. Puede usarse sobre cualquier superficie lavable, como pisos, puertas, paredes, azulejos, etc. Presentación: envase plástico.",
+    "presentation": "20.000 CC",
+    "price": "65.000"
+  },
+  {
+    "code": 69,
+    "name": "Lustra muebles",
+    "description": "Lustra muebles; apariencia: en crema; color: blanquesino; densidad: 0.91 gr /cm3; características: crema cuya función es embellecer el color de los muebles, dejándolos limpios, brillantes y protegidos del polvo devolviéndole su aspecto natural; uso: dar brillo a los muebles de madera.",
+    "presentation": "240 CC",
+    "price": "4.800"
+  },
+  {
+    "code": 70,
+    "name": "Lustra muebles",
+    "description": "Lustra muebles; apariencia: en crema; color: blanquesino; densidad: 0.91 gr /cm3; características: crema cuya función es embellecer el color de los muebles, dejándolos limpios, brillantes y protegidos del polvo devolviéndole su aspecto natural; uso: dar brillo a los muebles de madera.",
+    "presentation": "Galón",
+    "price": "57.000"
+  },
+  {
+    "code": 71,
+    "name": "Paño",
+    "description": "antibacterial multiusos, medidas: 38 cm x 40 cm; composición: con material sintético 80% viscosa y 20% polipropileno; características: flexible ,suave, absorvente, reutilizable, lavable, alta resistencia, no se deforma; color: amarillo; uso: maxima absorción de líquidos, secado rápido.",
+    "presentation": "Paquete X 3 Unidades",
+    "price": "4.800"
+  },
+  {
+    "code": 72,
+    "name": "Paño",
+    "description": "Paño antibacterial multiusos, medidas: 38 cm x 40 cm; composición: con material sintético 80% viscosa y 20% polipropileno; características: flexible ,suave, absorvente, reutilizable, lavable, alta resistencia, no se deforma; color: amarillo; uso: maxima absorción de líquidos, secado rápido.",
+    "presentation": "metro",
+    "price": "7.000"
+  },
+  {
+    "code": 73,
+    "name": "Paños",
+    "description": "de 41 cms x 41 cmx En distintos colores para asignarlo según la labor a realizar y evitar la contaminación cruzada. Vienen en color amarillo, rojo, verde y azul y un paño especial para limpieza de vidrios. Las líneas de color un poco más oscuro son ligeramente más abrasivas para permitir restregar si es necesario.",
+    "presentation": "Unidad",
+    "price": "7.000"
+  },
+  {
+    "code": 74,
+    "name": "Papel",
+    "description": "higiénico de hoja triple, blanco 45 m x rollo.",
+    "presentation": "Paquete X 4 Rollos",
+    "price": "9.520"
+  },
+  {
+    "code": 75,
+    "name": "Papel higiénico de hoja triple, blanco 45 m x rollo",
+    "description": "higiénico de hoja triple, blanco 45 m x rollo.",
+    "presentation": "Paquete X 12 Rollos",
+    "price": "23.800"
+  },
+  {
+    "code": 76,
+    "name": "Papel",
+    "description": "higiénico de hoja triple precortada, natural, 170 m x rollo.",
+    "presentation": "Paquete X 4 Rollos",
+    "price": "9.520"
+  },
+  {
+    "code": 77,
+    "name": "Pastilla ambientadora",
+    "description": "purificadora para tanque color azul, fragancia marina, contenido: 52 gr aprox.",
+    "presentation": "Unidad",
+    "price": "6.500"
+  },
+  {
+    "code": 78,
+    "name": "Rastrillo",
+    "description": "metálico de jardín, de 22 aspas para barrido, con mango de madera (largo mango 1.20 m).",
+    "presentation": "Unidad",
+    "price": "9.800"
+  },
+  {
+    "code": 79,
+    "name": "Recogedor",
+    "description": "de plástico, fabricado en polipropileno de alto impacto, Dimensiones del Producto: Largo 27.3 cm; Ancho36.8; Alto 12.7 cm, filo de goma; con mango en acero (largo mango 70 cm aprox) color: diferentes colores.",
+    "presentation": "Unidad",
+    "price": "3.200"
+  },
+  {
+    "code": 80,
+    "name": "Removedor",
+    "description": "de ceras y sellantes, Especial para piso.",
+    "presentation": "Galón",
+    "price": "32.000"
+  },
+  {
+    "code": 81,
+    "name": "Sellador",
+    "description": "para pisos; mezcla líquida de polímeros, emulsiones acrílicas, solventes y plastificantes; apariencia: liquido no viscoso blanco; olor: característico; PH: 8.2 +/- 0.5; punto de inflamación: producto no inflamable; solubilidad: soluble en agua en todas proporciones; caracterpisticas: brillo excelente y duradero, no requiere brillado con máquina, altamente resistente al tráfico peatonal, fácil aplicación y mantenimiento; uso: producto adecuado para dar brillo a pisos de granito, baldosas, vinilo, caucho tabletas, linóleo, terrazo etc.",
+    "presentation": "Galón",
+    "price": "42.000"
+  },
+  {
+    "code": 82,
+    "name": "Sellador",
+    "description": "Sellador para pisos; mezcla líquida de polímeros, emulsiones acrílicas, solventes y plastificantes; apariencia: liquido no viscoso blanco; olor: característico; PH: 8.2 +/- 0.5; punto de inflamación: producto no inflamable; solubilidad: soluble en agua en todas proporciones; caracterpisticas: brillo excelente y duradero, no requiere brillado con máquina, altamente resistente al tráfico peatonal, fácil aplicación y mantenimiento; uso: producto adecuado para dar brillo a pisos de granito, baldosas, vinilo, caucho tabletas, linóleo, terrazo etc.",
+    "presentation": "20.000 CC",
+    "price": "195.000"
+  },
+  {
+    "code": 83,
+    "name": "Señal",
+    "description": "de alerta a transeúntes en áreas de alto tráfico triangular de 62 cm.",
+    "presentation": "Unidad",
+    "price": "53.550"
+  },
+  {
+    "code": 84,
+    "name": "silicona líquida",
+    "description": "Protector UV3 , apariencia: líquida; color: blanco; PH: 6.50-8.50; olor: diferentes aromas, componentes: emulsioón de silicona, sulfato de sodio, glutaraldehido, benzofenona (filtro UV), envase de polipropileno; uso: limpiador de cogineria, muebles, vinilio, caucho, plastico.",
+    "presentation": "300-400 CC",
+    "price": "14.280"
+  },
+  {
+    "code": 85,
+    "name": "Papel",
+    "description": "Toalla en rollo hoja sencilla x 28 gr; empaque por 2 rollos, color: blanco.",
+    "presentation": "Rollo x 100 mts",
+    "price": "6.664"
+  },
+  {
+    "code": 86,
+    "name": "Trapero",
+    "description": "Peso de 1000gramos.",
+    "presentation": "Unidad",
+    "price": "8.568"
+  },
+  {
+    "code": 87,
+    "name": "Disolvente alifático, es un hidrocarburo volátil",
+    "description": "alifático, es un hidrocarburo volátil.",
+    "presentation": "Galón",
+    "price": "9.520"
+  },
+  {
+    "code": 88,
+    "name": "Disolvente alifático, es un hidrocarburo volátil",
+    "description": "alifático, es un hidrocarburo volátil.",
+    "presentation": "20.000 CC",
+    "price": "89.250"
+  }
+]

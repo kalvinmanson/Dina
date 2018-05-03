@@ -5,27 +5,30 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Product;
 use App\Category;
-use App\Field;
+use App\Cart;
 use Carbon;
 use App\Http\Controllers\Controller;
 
 class ProductController extends Controller
 {
-    public function index() {
+    public function index(Request $request) {
       Carbon::setLocale('es');
       if(!$this->hasrole('Admin')) { return redirect('/'); }
-    	$products = Product::orderBy('updated_at', 'desc')->get();
-    	return view('admin.products.index', compact('products'));
+    	$products = Product::orderBy('updated_at', 'desc');
+      if($request->q) {
+        $products = $products->where('name', 'LIKE', '%'.$request->q.'%');
+      }
+      $products = $products->paginate(20);
+      $totalprods = Product::all();
+    	return view('admin.products.index', compact('products', 'totalprods'));
     }
     public function store(Request $request) {
         if(!$this->hasrole('Admin')) { return redirect('/'); }
     	  $this->validate(request(), [
           'name' => ['required', 'max:100'],
-          'code' => ['unique:products']
         ]);
 
         $product = new Product;
-        $product->code = $request->code;
         $product->name = $request->name;
         $product->category_id = Category::first()->id;
         $product->save();
@@ -45,15 +48,13 @@ class ProductController extends Controller
         if(!$this->hasrole('Admin')) { return redirect('/'); }
         $product = Product::find($id);
         $this->validate(request(), [
-            'name' => ['required', 'max:250'],
-            'code' => ['unique:products,id,'.$product->id,'required', 'max:100']
+            'name' => ['required', 'max:250']
         ]);
 
 
         $product->category_id = $request->category_id;
         $product->name = $request->name;
         $product->presentation = $request->presentation;
-        $product->code = $request->code;
         $product->price = $request->price;
         $product->picture = $request->picture;
         $product->description = $request->description;
@@ -67,6 +68,8 @@ class ProductController extends Controller
         if(!$this->hasrole('Admin')) { return redirect('/'); }
         $product = Product::find($id);
         Product::destroy($product->id);
+        Cart::where('product_id', $product->id)->delete();
+
         flash('Record deleted')->success();
         return redirect()->action('Admin\ProductController@index');
     }

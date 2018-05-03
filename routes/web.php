@@ -44,6 +44,7 @@ Auth::routes();
 
 Route::get('/contact', 'ContactController@index');
 Route::post('/contact', 'ContactController@store');
+Route::get('/migrar', 'WebController@migrar');
 
 Route::get('/admin', function() {
 	return redirect()->route('admin.orders.index');

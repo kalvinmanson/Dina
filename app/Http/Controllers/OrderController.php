@@ -22,7 +22,7 @@ class OrderController extends Controller
       $totalprod = $cart->quantity * $cart->product->price;
       $subtotal += $totalprod;
       array_push($products, [
-        'code' => $cart->product->code,
+        'id' => $cart->product->id,
         'name' => $cart->product->name,
         'presentation' => $cart->product->name,
         'category' => $cart->product->category->name,
