@@ -14,7 +14,7 @@
 
 
 </head>
-<body>
+<body class="home">
   <div id="app">
     <header class="bg-dark">
       <div class="container">

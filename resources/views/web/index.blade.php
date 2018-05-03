@@ -56,5 +56,9 @@
         </div>
       </div>
     </div>
+    <div class="text-center pt-4">
+      <h4>Nuestros Clientes</h4>
+      <img src="/img/clientes.png" class="img-fluid" alt="Nuestros Clientes">
+    </div>
 </div>
 @endsection

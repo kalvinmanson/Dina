@@ -57,3 +57,15 @@ $screen-md-max: ($screen-lg-min - 1);
 */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800');
+
+
+.home {
+  font-family: 'Raleway', sans-serif;
+  background-image: url(/img/bg.jpg);
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Lato', sans-serif;
+}

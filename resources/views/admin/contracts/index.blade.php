@@ -26,7 +26,7 @@
                     <a href="/admin/contracts/{{ $contract->id }}/edit">{{ $contract->name }}</a><br />
                 </td>
                 <td>{{ $contract->number }}</td>
-                <td>{{ $contract->group->name }}</td>
+                <td>{{ $contract->group->name or '[no hay grupo]'}}</td>
                 <td>
                   {{ $contract->users->count() }} / {{ $contract->orders->count() }}
                   <a href="/admin/contracts/{{ $contract->id }}" class="btn btn-sm btn-primary">Detalles</a><br />
